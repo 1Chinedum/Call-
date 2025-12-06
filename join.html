@@ -14,6 +14,9 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="index.html">Call N'Barb</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
         <nav class="nav">
           <a href="#services" data-i18n="nav_services">Services</a>
           <a href="#how" data-i18n="nav_how">How It Works</a>
@@ -31,3 +34,92 @@
         </div>
       </div>
     </header>
+
+      <main>
+      <section class="hero" id="hero">
+        <div class="container hero-content">
+          <h1 class="hero-title" data-i18n="hero_title"> Join the Barbering team Now</h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle"> To join the Call N'Barb team. Follow the available procedures.</p>
+          <div class="hero-actions">
+            <a href="#how" class="btn btn-secondary" data-i18n="hero_learn">Learn More</a>
+          </div>
+        </div>
+    </section>
+
+     <section class="section" id="how">
+        <div class="container">
+          <h2 class="section-title" data-i18n="section_how_title">Procedures To Join Us.</h2>
+          <div class="steps">
+            <div class="step">
+              <span class="step-number">1</span>
+              <h3 data-i18n="step1_title">Registration</h3>
+              <p data-i18n="step1_desc">You are to register under the Call N'Barb company through the Official Website</p>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <h3 data-i18n="step2_title">Time Managemnet</h3>
+              <p data-i18n="step2_desc">The way and manner yu manage time will be tested by the panel.</p>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <h3 data-i18n="step3_title">Final Test</h3>
+              <p data-i18n="step3_desc">If you are reviewed you will be then accepted into the Call N'Barb team.</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+   <section class="contact" id="contact">
+       <!-- <div class="container">
+          <h2>Get in Touch</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Email</h3>
+              <p><a href="mailto:hello@callnbarb.com">hello@callnbarb.com</a></p>
+              <h3>Phone</h3>
+              <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+              <h3>Address</h3>
+              <p>Anywhere, Worldwide</p>
+              <h3>Hours</h3>
+              <p>Mon–Sat 08:00–20:00</p>
+            </div>-->
+            <h3 class="connect" style="justify-content: center; display: flexbox; text-align: center; font-size: xx-large; font-weight: 500px;"> Fill in your Details for Further Information.</h3>
+            <div class="contact-form" style="padding: 50px; margin: 100px;">
+              
+              <form id="contact-form" action="#" method="post" novalidate>
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone</label>
+                  <input type="phone" id="email" name="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+ <footer class="site-footer">
+      <div class="container footer-inner">
+        Entre Inc. <br>
+        <span>© <span id="year"></span> Call N'Barb</span>
+        <a href="#" class="footer-link" data-i18n="footer_privacy">Privacy</a>
+        <a href="#" class="footer-link" data-i18n="footer_terms">Terms</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+      </body>
+          </html>

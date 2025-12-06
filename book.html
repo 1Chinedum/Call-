@@ -14,6 +14,7 @@
        <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="index.html">Call N'Barb</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle Navigation"><span></span><span></span><span></span></button>
         <nav class="nav">
           <a href="#services" data-i18n="nav_services">Services</a>
           <a href="#how" data-i18n="nav_how">How It Works</a>
@@ -42,6 +43,49 @@
           </div>
         </div>
     </section>
-     <script src="scrippt.js"></script>
-</body>
-</html>
+
+    <section class="section" id="payment">
+      <div class="container">
+        <h2 class="section-title">Secure Card Payment</h2>
+        <div class="contact-form">
+          <form id="payment-form" novalidate>
+            <div class="form-field">
+              <label for="card-name">Name on Card</label>
+              <input type="text" id="card-name" name="card_name" required />
+            </div>
+            <div class="form-field">
+              <label for="card-number">Card Number</label>
+              <input type="text" id="card-number" name="card_number" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" required />
+            </div>
+            <div class="form-field" style="display:flex;gap:12px">
+              <div style="flex:1">
+                <label for="card-exp">Expiry</label>
+                <input type="text" id="card-exp" name="card_exp" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY" required />
+              </div>
+              <div style="flex:1">
+                <label for="card-cvc">CVC</label>
+                <input type="text" id="card-cvc" name="card_cvc" inputmode="numeric" autocomplete="cc-csc" placeholder="123" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" placeholder="e.g., Türkiye" />
+            </div>
+            <div class="form-status" aria-live="polite"></div>
+            <button type="submit" class="btn btn-primary">Pay Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Call N'Barb</span>
+        <a href="privacy.html" class="footer-link">Privacy</a>
+        <a href="privacy.html" class="footer-link">Terms</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>

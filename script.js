@@ -78,6 +78,41 @@ if(select){
   select.addEventListener('change',e=>applyLanguage(e.target.value));
   applyLanguage(select.value||'en');
 }
+document.querySelectorAll('.lang-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const lang=btn.getAttribute('data-lang');
+    if(lang) applyLanguage(lang);
+  });
+});
+
+const navToggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-header .nav');
+if(navToggle&&nav){
+  navToggle.addEventListener('click',()=>{
+    const open=nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+}
+
+const paymentForm=document.getElementById('payment-form');
+if(paymentForm){
+  paymentForm.addEventListener('submit',e=>{
+    e.preventDefault();
+    const data=new FormData(paymentForm);
+    const name=String(data.get('card_name')||'').trim();
+    const number=String(data.get('card_number')||'').replace(/\s+/g,'');
+    const exp=String(data.get('card_exp')||'').trim();
+    const cvc=String(data.get('card_cvc')||'').trim();
+    const status=paymentForm.querySelector('.form-status');
+    const valid=!!name && /^\d{13,19}$/.test(number) && /^\d{2}\/\d{2}$/.test(exp) && /^\d{3,4}$/.test(cvc);
+    if(!valid){
+      if(status) status.textContent='Please enter valid card details.';
+      return;
+    }
+    if(status) status.textContent='Processing...';
+    setTimeout(()=>{ if(status) status.textContent='Payment successful. Your appointment is confirmed!'; paymentForm.reset(); }, 1200);
+  });
+}
 
 const hero=document.getElementById('hero');
 const scissors=document.querySelector('.icon-scissors');

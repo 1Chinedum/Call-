@@ -66,6 +66,8 @@ body{
 .nav a{
     color:var(--text);text-decoration:none;margin-left:20px;opacity:.9}
 .nav .btn-outline{border:1px solid rgba(255,255,255,.18);padding:8px 14px;border-radius:10px}
+.nav-toggle{display:none;position:relative;width:40px;height:40px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:#121212;color:var(--text);align-items:center;justify-content:center;margin-right:12px}
+.nav-toggle span{display:block;width:20px;height:2px;background:var(--text);margin:3px 0;transition:transform .2s ease,opacity .2s ease}
 .lang{
     margin-left:16px;
     border-radius: 20px;
@@ -129,9 +131,14 @@ body{
 .footer-link{color:var(--muted);text-decoration:none}
 
 @media (max-width:900px){
-    .cards,.steps{
-        grid-template-columns:1fr 1fr
-    }
+  .nav-toggle{display:inline-flex}
+  .header-inner{gap:10px}
+  .nav{position:absolute;top:64px;left:0;right:0;background:#0f0f0f;border-bottom:1px solid rgba(255,255,255,.08);display:none;flex-direction:column;padding:12px 20px}
+  .nav a{margin:10px 0}
+  .nav.is-open{display:flex}
+  .cards,.steps{
+    grid-template-columns:1fr 1fr
+  }
 }
 @media (max-width:600px){
     .cards,.steps{
@@ -167,6 +174,7 @@ body{
 .contact-info p{margin:0 0 10px;color:var(--muted)}
 .contact-info a{color:var(--accent);text-decoration:none}
 .contact-form{background:#121212;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px}
+.form-status{color:var(--muted);min-height:20px;margin-bottom:8px}
 .form-field{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
 .form-field label{font-weight:600;color:var(--text)}
 .form-field input,.form-field textarea{background:#0f0f0f;border:1px solid rgba(255,255,255,.12);color:var(--text);border-radius:12px;padding:12px 14px;outline:none}
