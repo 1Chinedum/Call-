@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Call N'Barb — Home Barbing Anywhere</title>
+    <meta name="description" content="On-demand home barbering service anywhere in the world. Book professional barbers to your doorstep with Call N'Barb." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Call N'Barb</a>
+        <nav class="nav">
+          <a href="#services" data-i18n="nav_services">Services</a>
+          <a href="#how" data-i18n="nav_how">How It Works</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+           <a href="join.html" class="btn btn-outline" data-i18n="nav_cta">Join Us</a>
+          <a href="book.html" class="btn btn-outline" data-i18n="nav_cta">Book Now</a>
+        </nav>
+        <div class="lang">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button class="lang-btn" data-lang="en" aria-label="English">🇺🇸</button>
+            <button class="lang-btn" data-lang="tr" aria-label="Türkçe">🇹🇷</button>
+            <button class="lang-btn" data-lang="el" aria-label="Ελληνικά (Κύπρος)">🇨🇾</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-content">
+          <h1 class="hero-title" data-i18n="hero_title">Home Barbing, Anywhere In The World</h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">Professional barbers to your doorstep. Fast, reliable, and stylish.</p>
+          <div class="hero-actions">
+            <a href="book.html" class="btn btn-primary" data-i18n="hero_book">Book a Barber</a>
+            <a href="#how" class="btn btn-secondary" data-i18n="hero_learn">Learn More</a>
+          </div>
+        </div>
+          <div class="store-badges">
+            <a href="#download" class="badge">App Store</a>
+            <a href="#download" class="badge">Google Play</a>
+          </div>
+        <div class="hero-visuals">
+         <!--<img class="hero-photo" src="https://images.unsplash.com/photo-1514933651103-005eec7b0b2f?auto=format&fit=crop&w=1200&q=60" alt="Barber working at home" />
+          <svg class="icon icon-scissors" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M25 21c-2 2-2 5 0 7l7 6-7 6c-2 2-2 5 0 7s5 2 7 0l10-9 10 9c2 2 5 2 7 0s2-5 0-7L43 34l16-13c2-2 2-5 0-7s-5-2-7 0L36 23l-4-4c-2-2-5-2-7 2z" fill="currentColor" />
+          </svg>--> 
+          <svg class="icon icon-comb" viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="6" y="26" width="52" height="12" rx="6" fill="currentColor" />
+            <rect x="10" y="10" width="4" height="44" fill="currentColor" />
+            <rect x="18" y="10" width="4" height="44" fill="currentColor" />
+            <rect x="26" y="10" width="4" height="44" fill="currentColor" />
+            <rect x="34" y="10" width="4" height="44" fill="currentColor" />
+            <rect x="42" y="10" width="4" height="44" fill="currentColor" />
+            <rect x="50" y="10" width="4" height="44" fill="currentColor" />
+          </svg>
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <h2 class="section-title" data-i18n="section_services_title">Services</h2>
+          <div class="cards">
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1514933651103-005eec7b0b2f?auto=format&fit=crop&w=800&q=60" alt="Classic haircut" />
+              <h3 data-i18n="card_classic_title">Classic Haircut</h3>
+              <p data-i18n="card_classic_desc">Timeless cuts tailored to your style, delivered at home.</p>
+            </article>
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1516646255117-8c3b9616cf54?auto=format&fit=crop&w=800&q=60" alt="Beard grooming" />
+              <h3 data-i18n="card_beard_title">Beard & Grooming</h3>
+              <p data-i18n="card_beard_desc">Precision trimming and grooming for a polished look.</p>
+            </article>
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?auto=format&fit=crop&w=800&q=60" alt="Family haircut" />
+              <h3 data-i18n="card_family_title">Kids & Family</h3>
+              <p data-i18n="card_family_desc">Friendly at-home sessions for the whole family.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how">
+        <div class="container">
+          <h2 class="section-title" data-i18n="section_how_title">How It Works</h2>
+          <div class="steps">
+            <div class="step">
+              <span class="step-number">1</span>
+              <h3 data-i18n="step1_title">Tell Us Where</h3>
+              <p data-i18n="step1_desc">Enter your location worldwide and choose your service.</p>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <h3 data-i18n="step2_title">Pick A Barber</h3>
+              <p data-i18n="step2_desc">Browse vetted pros and select the time that suits you.</p>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <h3 data-i18n="step3_title">Relax At Home</h3>
+              <p data-i18n="step3_desc">Your barber arrives on time. Great hair, zero travel.</p>
+            </div>
+              <div class="step">
+              <span class="step-number">4</span>
+              <h3 data-i18n="step3_title">Payments</h3>
+              <p data-i18n="step3_desc">Payments are made easily without stress and less embarassment</p>
+            </div>
+              <div class="step">
+              <span class="step-number">5</span>
+              <h3 data-i18n="step3_title">Privacy & Security</h3>
+              <p data-i18n="step3_desc">We keep a eye on your privacy which is stated on our Terms and Conditions</p>
+            </div>
+              <div class="step">
+              <span class="step-number">6</span>
+              <h3 data-i18n="step3_title">Relax At Home</h3>
+              <p data-i18n="step3_desc">Your barber arrives on time. Great hair, zero travel.</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      
+        
+      <section class="cta" id="cta">
+        <div class="container cta-inner">
+          <h2 data-i18n="cta_title">Join The Barbering Team.</h2>
+          <p data-i18n="cta_desc">Book a professional barber to your doorstep in minutes.</p>
+          <a href="#" class="btn btn-primary" data-i18n="cta_button">Join Now</a>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container">
+          <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <details>
+              <summary data-i18n="faq_q1">Do you operate worldwide?</summary>
+              <p data-i18n="faq_a1">Yes. We connect you with vetted local barbers in many countries and cities.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq_q2">What equipment do I need at home?</summary>
+              <p data-i18n="faq_a2">Just a well-lit space and a chair. Barbers bring sanitized tools.</p>
+            </details>
+
+            <details>
+              <summary data-i18n="faq_q2">What equipment do I need at home?</summary>
+              <p data-i18n="faq_a2">Just a well-lit space and a chair. Barbers bring sanitized tools.</p>
+            </details>
+
+            <details>
+              <summary data-i18n="faq_q2">What equipment do I need at home?</summary>
+              <p data-i18n="faq_a2">Just a well-lit space and a chair. Barbers bring sanitized tools.</p>
+            </details>
+
+            <details>
+              <summary data-i18n="faq_q2">What equipment do I need at home?</summary>
+              <p data-i18n="faq_a2">Just a well-lit space and a chair. Barbers bring sanitized tools.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq_q3">How do payments work?</summary>
+              <p data-i18n="faq_a3">Secure online payments during booking. Cash may be available in select regions.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+      <section id="features" class="features">
+      <div class="container">
+        <h2>Countries We Operate</h2>
+        <p class="section-subtitle">Our customers joy is our number one priority</p>
+        <div class="feature-grid" style="">
+          <article class="feature-card">
+            <div class="icon">🇺🇸</div>
+            <h3>Nigeria</h3>
+            <p>Create tasks fast with smart shortcuts and flexible lists.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🇹🇷</div>
+            <h3>Turkiye</h3>
+            <p>Connect your calendars and see your week at a glance.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🇨🇾</div>
+            <h3>Cyprus</h3>
+            <p>Capture ideas with rich text, images, and checklists.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🔔</div>
+            <h3>Reminders</h3>
+            <p>Never miss a beat with time and location notifications.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">👥</div>
+            <h3>Collaboration</h3>
+            <p>Share lists and coordinate with your team or family.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">📊</div>
+            <h3>Insights</h3>
+            <p>Review progress and celebrate streaks that keep you motivated.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Email</h3>
+              <p><a href="mailto:hello@callnbarb.com">hello@callnbarb.com</a></p>
+              <h3>Phone</h3>
+              <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+              <h3>Address</h3>
+              <p>Anywhere, Worldwide</p>
+              <h3>Hours</h3>
+              <p>Mon–Sat 08:00–20:00</p>
+            </div>
+            <div class="contact-form">
+              <form id="contact-form" action="#" method="post" novalidate>
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        Entre Inc. <br>
+        <span>© <span id="year"></span> Call N'Barb</span>
+        <a href="#" class="footer-link" data-i18n="footer_privacy">Privacy</a>
+        <a href="#" class="footer-link" data-i18n="footer_terms">Terms</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
